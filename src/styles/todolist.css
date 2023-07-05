@@ -1,0 +1,47 @@
+.todolist {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.singleTodoForm {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: rgb(115, 224, 122);
+}
+
+.todo_text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+.todo_text:focus {
+    outline: none;
+}
+
+.icons {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media (max-width : 1200px) {
+    .singleTodoForm{
+        width: 40%;
+    }
+}
+@media (max-width : 700px) {
+    .input{
+        width: 95%;
+    }
+    .todolist{
+        width: 95%;
+    }
+    .todo_text {
+        width: 100%;
+    }
+}
